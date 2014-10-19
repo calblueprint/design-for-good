@@ -10,7 +10,7 @@
   src: url('../fonts/BebasNeue Regular.ttf');
 }
 
-body { font-family: 'Bebas Neue' }
+body { font-family: 'Bebas Neue'; font-size: 3em; }
 body > * { position: fixed; }
 
 .logo {
@@ -28,8 +28,8 @@ body > * { position: fixed; }
 }
 
 #and {
-  left: 48%;
-  font-size: 3em;
+  left: 46%;
+  font-size: 2em;
 }
 
 #innod {
@@ -38,7 +38,7 @@ body > * { position: fixed; }
 
 #present {
   top: 48%;
-  font-size: 5em;
+  font-size: 100%;
   text-align: center;
 }
 

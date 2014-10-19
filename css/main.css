@@ -237,7 +237,8 @@ textarea {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeue Regular.ttf"); }
 body {
-  font-family: "Bebas Neue"; }
+  font-family: 'Bebas Neue';
+  font-size: 3em; }
 
 body > * {
   position: fixed; }
@@ -253,15 +254,15 @@ body > * {
   left: 15%; }
 
 #and {
-  left: 48%;
-  font-size: 3em; }
+  left: 46%;
+  font-size: 2em; }
 
 #innod {
   right: 15%; }
 
 #present {
   top: 48%;
-  font-size: 5em;
+  font-size: 100%;
   text-align: center; }
 
 #hackathon {
