@@ -248,18 +248,24 @@ div[class^="page-"], div[class*=" page-"] {
   width: 90%;
   height: 96%;
   padding: 1% 2% 1% 8%; }
+  div[class^="page-"] *, div[class*=" page-"] * {
+    position: fixed; }
 
-.page-0 {
+.landing {
+  position: fixed;
+  width: 90%;
+  height: 96%;
+  padding: 1% 2% 1% 8%;
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .page-0 .logo {
+  .landing .logo {
     width: 100%;
     display: inline-block; }
-    .page-0 .logo img {
+    .landing .logo img {
       width: 100%;
       height: auto; }
-  .page-0 #and {
+  .landing #and {
     width: 100%;
     flex-shrink: 1.4;
     text-align: center;
@@ -268,39 +274,34 @@ div[class^="page-"], div[class*=" page-"] {
 
 .page-1 #present {
   font-size: 4em;
-  position: fixed;
   top: 50%;
   left: 55%;
   margin-left: -254px;
   margin-top: -134px; }
 
 .page-2 #hackathon {
-  position: fixed;
   left: 20%;
   transform: rotate(-90deg); }
 .page-2 #dfg {
-  position: fixed;
   width: 600px;
   height: 400px;
   top: 300px; }
 .page-2 #dfg-tag {
-  position: fixed;
   top: 530px;
   white-space: nowrap;
   overflow: hidden; }
 
 .page-3 #where {
-  position: fixed;
   right: 0;
   top: 20px; }
 .page-3 #date {
-  position: fixed;
   right: 0;
   top: 80px; }
 .page-3 #time {
-  position: fixed;
   right: 0;
   top: 140px; }
+.page-3 #map {
+  left: 300px; }
 
 @media only screen and (max-width: 420px) {
   body {

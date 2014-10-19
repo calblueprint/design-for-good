@@ -14,9 +14,15 @@ div[class^="page-"], div[class*=" page-"] {
   width: 90%;
   height: 96%;
   padding: 1% 2% 1% 8%;
+
+  * { position: fixed; }
 }
 
-.page-0 {
+.landing {
+  position: fixed;
+  width: 90%;
+  height: 96%;
+  padding: 1% 2% 1% 8%;
   @include flex-row;
   .logo {
     width: 100%;
@@ -40,7 +46,6 @@ div[class^="page-"], div[class*=" page-"] {
 .page-1 {
   #present {
     font-size: 4em;
-    position: fixed;
     top: 50%;
     left: 55%;
     margin-left: -254px;
@@ -50,18 +55,15 @@ div[class^="page-"], div[class*=" page-"] {
 
 .page-2 {
   #hackathon {
-    position: fixed;
     left: 20%;
     transform: rotate(-90deg);
   }
   #dfg {
-    position: fixed;
     width: 600px;
     height: 400px;
     top: 300px;
   }
   #dfg-tag {
-    position: fixed;
     top: 530px;
     white-space: nowrap;
     overflow: hidden;
@@ -70,19 +72,19 @@ div[class^="page-"], div[class*=" page-"] {
 
 .page-3 {
   #where {
-    position: fixed;
     right: 0;
     top: 20px;
   }
   #date {
-    position: fixed;
     right: 0;
     top: 80px;
   }
   #time {
-    position: fixed;
     right: 0;
     top: 140px;
+  }
+  #map {
+    left: 300px;
   }
 }
 
