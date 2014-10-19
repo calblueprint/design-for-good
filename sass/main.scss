@@ -1,11 +1,59 @@
 @import "base";
 
-.logo {
-    width: 30%;
-    display: inline-block;
+@font-face {
+  font-family: 'Bebas Neue Light';
+  src: url('../fonts/BebasNeue Light.ttf');
+}
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue Regular.ttf');
+}
+
+body { font-family: 'Bebas Neue' }
+body > * { position: fixed; }
+
+.logo {
+  width: 30%;
+  display: inline-block;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#bp {
+  left: 15%;
+}
+
+#and {
+  left: 48%;
+  font-size: 3em;
+}
+
+#innod {
+  right: 15%;
+}
+
+#present {
+  top: 48%;
+  font-size: 5em;
+  text-align: center;
+}
+
+#hackathon {
+  top: 55%;
+  left: 30%;
+  transform: rotate(-90deg);
+}
+
+#dfg {
+  top: 55%;
+  left: 40%;
+}
+
+#dfg-tag {
+  top: 60%;
+  left: 55%;
 }
