@@ -1,20 +1,27 @@
 @import "base";
+@import "fonts";
 
-@font-face {
-  font-family: 'Bebas Neue Light';
-  src: url('../fonts/BebasNeue Light.ttf');
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url('../fonts/BebasNeue Regular.ttf');
-}
-
-body { font-family: 'Bebas Neue'; font-size: 3em; }
+body { font-family: 'Bebas Neue Light'; font-size: 3em; }
 body > * { position: fixed; }
 
+@mixin flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.page {
+  width: 90%;
+  height: 96%;
+  padding: 1% 2% 1% 8%;
+
+  &-0 {
+    @include flex-row;
+  }
+}
+
 .logo {
-  width: 30%;
+  width: 100%;
   display: inline-block;
 
   img {
@@ -23,37 +30,40 @@ body > * { position: fixed; }
   }
 }
 
-#bp {
-  left: 15%;
-}
-
 #and {
-  left: 46%;
+  width: 100%;
+  flex-shrink: 1.4;
+  text-align: center;
+  font-family: 'Bebas Neue';
   font-size: 2em;
 }
 
-#innod {
-  right: 15%;
-}
-
 #present {
-  top: 48%;
-  font-size: 100%;
-  text-align: center;
+  font-size: 4em;
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  margin-left: -254px;
+  margin-top: -134px;
 }
 
 #hackathon {
-  top: 55%;
-  left: 30%;
   transform: rotate(-90deg);
 }
 
 #dfg {
-  top: 55%;
-  left: 40%;
 }
 
 #dfg-tag {
-  top: 60%;
-  left: 55%;
+}
+
+@media only screen and (max-width: 420px) {
+  body { font-size: 1em; }
+
+  #present {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -50px;
+    img { width: 100%; }
+  }
 }

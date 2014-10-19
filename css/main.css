@@ -237,45 +237,55 @@ textarea {
   font-family: 'Bebas Neue';
   src: url("../fonts/BebasNeue Regular.ttf"); }
 body {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue Light';
   font-size: 3em; }
 
 body > * {
   position: fixed; }
 
+.page {
+  width: 90%;
+  height: 96%;
+  padding: 1% 2% 1% 8%; }
+  .page-0 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
 .logo {
-  width: 30%;
+  width: 100%;
   display: inline-block; }
   .logo img {
     width: 100%;
     height: auto; }
 
-#bp {
-  left: 15%; }
-
 #and {
-  left: 46%;
+  width: 100%;
+  flex-shrink: 1.4;
+  text-align: center;
+  font-family: 'Bebas Neue';
   font-size: 2em; }
 
-#innod {
-  right: 15%; }
-
 #present {
-  top: 48%;
-  font-size: 100%;
-  text-align: center; }
+  font-size: 4em;
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  margin-left: -254px;
+  margin-top: -134px; }
 
 #hackathon {
-  top: 55%;
-  left: 30%;
   transform: rotate(-90deg); }
 
-#dfg {
-  top: 55%;
-  left: 40%; }
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 1em; }
 
-#dfg-tag {
-  top: 60%;
-  left: 55%; }
+  #present {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -50px; }
+    #present img {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
