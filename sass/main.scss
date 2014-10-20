@@ -200,12 +200,24 @@ div[class^="page-"], div[class*=" page-"] {
   .prize#third { left: 900px; bottom: 180px; }
 }
 
-.page-7 {
+.page-7, .page-8 {
   #sign {
-    left: 400px;
-    top: -150px;
+    left: 450px;
+    top: -200px;
     img { width: 600px; }
   }
+  .row {
+    @include flex-row;
+    width: 70%;
+    left: 300px;
+
+    img {
+      width: 100%;
+      position: static;
+    }
+  }
+  .row-1 { top: 220px; }
+  .row-2 { top: 460px; }
 }
 
 @media only screen and (max-width: 420px) {
