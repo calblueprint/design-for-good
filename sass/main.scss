@@ -1,10 +1,12 @@
 @import "base";
 @import "fonts";
 
-$blue1: #58859d;
-$blue2: #275d78;
-$blue3: #6fa5c0;
-$blue4: #8297a3;
+$font-blue: #58859d;
+
+$row-blue1: $font-blue;
+$row-blue2: #275d78;
+$row-blue3: #6fa5c0;
+$row-blue4: #8297a3;
 
 body { font-family: 'Comfortaa'; font-size: 3em; }
 
@@ -128,10 +130,10 @@ div[class^="page-"], div[class*=" page-"] {
     width: 100%;
     color: white;
   }
-  .row-1 { background-color: $blue1; }
-  .row-2 { background-color: $blue2; }
-  .row-3 { background-color: $blue3; }
-  .row-4 { background-color: $blue4; }
+  .row-1 { background-color: $row-blue1; }
+  .row-2 { background-color: $row-blue2; }
+  .row-3 { background-color: $row-blue3; }
+  .row-4 { background-color: $row-blue4; }
   #times {
     width: 35%;
     height: 96%;
@@ -143,6 +145,21 @@ div[class^="page-"], div[class*=" page-"] {
     left: 43%;
     align-items: flex-start;
   }
+}
+
+.page-6 {
+  #prize-podium {
+    left: 300px;
+    img { width: 800px; }
+  }
+  .place { font-size: 1.3em; color: white; }
+  .place#second { left: 380px; bottom: 130px; }
+  .place#first { left: 645px; bottom: 340px; }
+  .place#third { left: 900px; bottom: 70px; }
+  .prize { font-size: 1.3em; color: $font-blue; }
+  .prize#second { left: 380px; bottom: 240px; }
+  .prize#first { left: 640px; bottom: 450px; }
+  .prize#third { left: 900px; bottom: 180px; }
 }
 
 @media only screen and (max-width: 420px) {

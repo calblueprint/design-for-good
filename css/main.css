@@ -349,6 +349,35 @@ div[class^="page-"], div[class*=" page-"] {
   left: 43%;
   align-items: flex-start; }
 
+.page-6 #prize-podium {
+  left: 300px; }
+  .page-6 #prize-podium img {
+    width: 800px; }
+.page-6 .place {
+  font-size: 1.3em;
+  color: white; }
+.page-6 .place#second {
+  left: 380px;
+  bottom: 130px; }
+.page-6 .place#first {
+  left: 645px;
+  bottom: 340px; }
+.page-6 .place#third {
+  left: 900px;
+  bottom: 70px; }
+.page-6 .prize {
+  font-size: 1.3em;
+  color: #58859d; }
+.page-6 .prize#second {
+  left: 380px;
+  bottom: 240px; }
+.page-6 .prize#first {
+  left: 640px;
+  bottom: 450px; }
+.page-6 .prize#third {
+  left: 900px;
+  bottom: 180px; }
+
 @media only screen and (max-width: 420px) {
   body {
     font-size: 1em; }
