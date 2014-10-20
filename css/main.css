@@ -320,7 +320,11 @@ div[class^="page-"], div[class*=" page-"] {
     width: 650px;
     height: auto; }
 .page-2 #dfg-tag {
-  top: 520px;
+  top: 510px;
+  width: 100%;
+  background-color: #58859d;
+  padding: 10px 30px;
+  color: white;
   white-space: nowrap;
   overflow: hidden; }
 

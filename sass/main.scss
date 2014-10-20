@@ -102,7 +102,11 @@ div[class^="page-"], div[class*=" page-"] {
     }
   }
   #dfg-tag {
-    top: 520px;
+    top: 510px;
+    width: 100%;
+    background-color: $tag-blue;
+    padding: 10px 30px;
+    color: white;
     white-space: nowrap;
     overflow: hidden;
   }
