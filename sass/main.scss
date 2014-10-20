@@ -1,6 +1,11 @@
 @import "base";
 @import "fonts";
 
+$blue1: #58859d;
+$blue2: #275d78;
+$blue3: #6fa5c0;
+$blue4: #8297a3;
+
 body { font-family: 'Comfortaa'; font-size: 3em; }
 
 @mixin flex-row {
@@ -106,6 +111,37 @@ div[class^="page-"], div[class*=" page-"] {
     width: 120px;
     top: 320px;
     left: 635px;
+  }
+}
+
+.page-5 {
+  & > div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    img, span { position: static; }
+  }
+  .row { position: static; font-size: .8em; }
+  .row-right {
+    margin-left: 50px;
+    padding: 10px 20px;
+    width: 100%;
+    color: white;
+  }
+  .row-1 { background-color: $blue1; }
+  .row-2 { background-color: $blue2; }
+  .row-3 { background-color: $blue3; }
+  .row-4 { background-color: $blue4; }
+  #times {
+    width: 35%;
+    height: 96%;
+    align-items: flex-end;
+  }
+  #events {
+    width: 55%;
+    height: 96%;
+    left: 43%;
+    align-items: flex-start;
   }
 }
 
