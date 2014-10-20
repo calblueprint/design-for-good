@@ -269,7 +269,6 @@ div[class^="page-"], div[class*=" page-"] {
     width: 100%;
     flex-shrink: 1.4;
     text-align: center;
-    /*font-family: 'Bebas Neue';*/
     font-size: 2em; }
 
 .page-1 #present {
@@ -279,29 +278,44 @@ div[class^="page-"], div[class*=" page-"] {
   margin-left: -254px;
   margin-top: -134px; }
 
-.page-2 #hackathon {
-  left: 20%;
-  transform: rotate(-90deg); }
-.page-2 #dfg {
-  width: 600px;
-  height: 400px;
-  top: 300px; }
+.page-2 #dfg-logo {
+  top: 130px; }
+  .page-2 #dfg-logo img {
+    width: 650px;
+    height: auto; }
 .page-2 #dfg-tag {
-  top: 530px;
+  top: 520px;
   white-space: nowrap;
   overflow: hidden; }
 
 .page-3 #where {
+  padding-right: 10px;
   right: 0;
   top: 20px; }
 .page-3 #date {
+  padding-right: 10px;
   right: 0;
   top: 80px; }
 .page-3 #time {
+  padding-right: 10px;
   right: 0;
   top: 140px; }
 .page-3 #map {
+  left: 350px; }
+  .page-3 #map img {
+    width: 600px;
+    height: auto; }
+
+.page-4 #bp-venn {
+  top: 100px;
   left: 300px; }
+.page-4 #innod-venn {
+  top: 120px;
+  left: 600px; }
+.page-4 #dfg img {
+  width: 120px;
+  top: 320px;
+  left: 635px; }
 
 @media only screen and (max-width: 420px) {
   body {
