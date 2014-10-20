@@ -231,17 +231,14 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 @font-face {
-  font-family: 'Bebas Neue Light';
-  src: url("../fonts/BebasNeue Light.ttf"); }
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url("../fonts/BebasNeue Regular.ttf"); }
-@font-face {
   font-family: 'Comfortaa';
   src: url("../fonts/Comfortaa-Light.ttf"); }
 body {
   font-family: 'Comfortaa';
   font-size: 3em; }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
 
 div[class^="page-"], div[class*=" page-"] {
   position: fixed;
@@ -250,6 +247,45 @@ div[class^="page-"], div[class*=" page-"] {
   padding: 1% 2% 1% 8%; }
   div[class^="page-"] *, div[class*=" page-"] * {
     position: fixed; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 10;
+  font-size: .7em; }
+  .sidebar li {
+    list-style: none; }
+  .sidebar li a {
+    display: block;
+    color: white;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    padding: 20px 0 20px 80px;
+    -webkit-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    transition: width .3s ease-in-out,padding .3s ease-in-out; }
+    .sidebar li a:hover {
+      width: 250px !important;
+      padding: 20px 20px 20px 10px !important; }
+  .sidebar .sidebar-1 a {
+    background-color: #293176; }
+  .sidebar .sidebar-2 a {
+    background-color: #354d7f; }
+  .sidebar .sidebar-3 a {
+    background-color: #44698d; }
+  .sidebar .sidebar-4 a {
+    background-color: #58859d; }
+  .sidebar .sidebar-5 a {
+    background-color: #6aa6af; }
+  .sidebar .sidebar-6 a {
+    background-color: #7fcbbf; }
+  .sidebar .sidebar-7 a {
+    background-color: #b7dfd7; }
 
 .landing {
   position: fixed;
@@ -377,6 +413,12 @@ div[class^="page-"], div[class*=" page-"] {
 .page-6 .prize#third {
   left: 900px;
   bottom: 180px; }
+
+.page-7 #sign {
+  left: 400px;
+  top: -150px; }
+  .page-7 #sign img {
+    width: 600px; }
 
 @media only screen and (max-width: 420px) {
   body {

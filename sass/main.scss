@@ -1,14 +1,9 @@
 @import "base";
 @import "fonts";
-
-$font-blue: #58859d;
-
-$row-blue1: $font-blue;
-$row-blue2: #275d78;
-$row-blue3: #6fa5c0;
-$row-blue4: #8297a3;
+@import "colors";
 
 body { font-family: 'Comfortaa'; font-size: 3em; }
+a, a:hover, a:active, a:visited { text-decoration: none; }
 
 @mixin flex-row {
   display: flex;
@@ -23,6 +18,45 @@ div[class^="page-"], div[class*=" page-"] {
   padding: 1% 2% 1% 8%;
 
   * { position: fixed; }
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 10;
+
+  font-size: .7em;
+
+  li { list-style: none; }
+  li a {
+    display: block;
+    color: white;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    padding: 20px 0 20px 80px;
+
+    -webkit-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    transition: width .3s ease-in-out,padding .3s ease-in-out;
+
+    &:hover {
+      width: 250px!important;
+      padding: 20px 20px 20px 10px!important;
+    }
+  }
+  .sidebar-1 a { background-color: $sidebar-blue1; }
+  .sidebar-2 a { background-color: $sidebar-blue2; }
+  .sidebar-3 a { background-color: $sidebar-blue3; }
+  .sidebar-4 a { background-color: $sidebar-blue4; }
+  .sidebar-5 a { background-color: $sidebar-blue5; }
+  .sidebar-6 a { background-color: $sidebar-blue6; }
+  .sidebar-7 a { background-color: $sidebar-blue7; }
 }
 
 .landing {
@@ -160,6 +194,14 @@ div[class^="page-"], div[class*=" page-"] {
   .prize#second { left: 380px; bottom: 240px; }
   .prize#first { left: 640px; bottom: 450px; }
   .prize#third { left: 900px; bottom: 180px; }
+}
+
+.page-7 {
+  #sign {
+    left: 400px;
+    top: -150px;
+    img { width: 600px; }
+  }
 }
 
 @media only screen and (max-width: 420px) {
