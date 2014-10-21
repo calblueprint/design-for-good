@@ -200,7 +200,7 @@ div[class^="page-"], div[class*=" page-"] {
   .prize#third { left: 900px; bottom: 180px; }
 }
 
-.page-7, .page-8 {
+.page-7 {
   #sign {
     left: 450px;
     top: -200px;
@@ -210,14 +210,29 @@ div[class^="page-"], div[class*=" page-"] {
     @include flex-row;
     width: 70%;
     left: 300px;
-
-    img {
-      width: 100%;
-      position: static;
-    }
+    img { width: 100%; position: static; }
   }
   .row-1 { top: 220px; }
   .row-2 { top: 460px; }
+}
+
+.page-8 {
+  .row {
+    @include flex-row;
+    width: 70%;
+
+    .smaller { flex-shrink: 3; }
+    img { width: 100%; position: static; }
+  }
+  .row-1 {
+    top: 220px;
+    left: 300px;
+  }
+  .row-2 {
+    width: 50%;
+    top: 480px;
+    left: 450px;
+  }
 }
 
 @media only screen and (max-width: 420px) {

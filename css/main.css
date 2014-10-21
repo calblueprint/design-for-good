@@ -418,24 +418,42 @@ div[class^="page-"], div[class*=" page-"] {
   left: 900px;
   bottom: 180px; }
 
-.page-7 #sign, .page-8 #sign {
+.page-7 #sign {
   left: 450px;
   top: -200px; }
-  .page-7 #sign img, .page-8 #sign img {
+  .page-7 #sign img {
     width: 600px; }
-.page-7 .row, .page-8 .row {
+.page-7 .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 70%;
   left: 300px; }
-  .page-7 .row img, .page-8 .row img {
+  .page-7 .row img {
     width: 100%;
     position: static; }
-.page-7 .row-1, .page-8 .row-1 {
+.page-7 .row-1 {
   top: 220px; }
-.page-7 .row-2, .page-8 .row-2 {
+.page-7 .row-2 {
   top: 460px; }
+
+.page-8 .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%; }
+  .page-8 .row .smaller {
+    flex-shrink: 3; }
+  .page-8 .row img {
+    width: 100%;
+    position: static; }
+.page-8 .row-1 {
+  top: 220px;
+  left: 300px; }
+.page-8 .row-2 {
+  width: 50%;
+  top: 480px;
+  left: 450px; }
 
 @media only screen and (max-width: 420px) {
   body {
