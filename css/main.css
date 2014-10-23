@@ -267,6 +267,7 @@ div[class^="page-"], div[class*=" page-"] {
     width: 0;
     padding: 20px 0 20px 80px;
     -webkit-transition: width .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out,padding .3s ease-in-out;
     transition: width .3s ease-in-out,padding .3s ease-in-out; }
     .sidebar li a:hover {
       width: 250px !important;
@@ -291,17 +292,9 @@ div[class^="page-"], div[class*=" page-"] {
   width: 90%;
   height: 96%;
   padding: 1% 2% 1% 8%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: space-around;
+  align-items: center; }
   .landing .logo {
     width: 100%;
     display: inline-block; }
@@ -310,9 +303,7 @@ div[class^="page-"], div[class*=" page-"] {
       height: auto; }
   .landing #and {
     width: 100%;
-    -webkit-flex-shrink: 1.4;
-        -ms-flex-negative: 1.4;
-            flex-shrink: 1.4;
+    flex-shrink: 1.4;
     text-align: center;
     font-size: 2em; }
 
@@ -367,18 +358,9 @@ div[class^="page-"], div[class*=" page-"] {
   left: 635px; }
 
 .page-5 > div {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  flex-direction: column;
+  justify-content: space-around; }
   .page-5 > div img, .page-5 > div span {
     position: static; }
 .page-5 .row {
@@ -400,18 +382,12 @@ div[class^="page-"], div[class*=" page-"] {
 .page-5 #times {
   width: 35%;
   height: 96%;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  align-items: flex-end; }
 .page-5 #events {
   width: 55%;
   height: 96%;
   left: 43%;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  align-items: flex-start; }
 
 .page-6 #prize-podium {
   left: 300px; }
@@ -448,17 +424,9 @@ div[class^="page-"], div[class*=" page-"] {
   .page-7 #sign img {
     width: 600px; }
 .page-7 .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 70%;
   left: 300px; }
   .page-7 .row img {
@@ -470,22 +438,12 @@ div[class^="page-"], div[class*=" page-"] {
   top: 460px; }
 
 .page-8 .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 70%; }
   .page-8 .row .smaller {
-    -webkit-flex-shrink: 3;
-        -ms-flex-negative: 3;
-            flex-shrink: 3; }
+    flex-shrink: 3; }
   .page-8 .row img {
     width: 100%;
     position: static; }
